@@ -11,7 +11,12 @@ import 'rxjs/add/observable/of';
 export class AppComponent {
   title = 'learn angular anhnt';
   displayedColumns = ['position', 'name', 'mail'];
-  dataSource = new ExampleDataSource();
+  dataSource =  new ExampleDataSource();
+  model: any = {};
+  addUser() {
+    console.log(this.model);
+    this.model = {};
+  }
 }
 
 export interface Element {

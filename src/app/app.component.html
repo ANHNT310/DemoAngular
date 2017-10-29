@@ -13,15 +13,15 @@
     <div class="blocks" fxFlex="60%">
       <div class="example-container">
         <mat-form-field>
-          <input matInput placeholder="name">
+          <input matInput placeholder="name" name="name" id="name" [(ngModel)]="model.name">
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="position">
+          <input matInput placeholder="position" name="position" id="position" [(ngModel)]="model.position">
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="email">
+          <input matInput placeholder="mail" name="mail" id="mail" [(ngModel)]="model.mail">
         </mat-form-field>
-        <button mat-raised-button color="primary">Create</button>
+        <button mat-raised-button color="primary" type="submit" (click)="addUser()">Create</button>
       </div>
     </div>
   </div>
