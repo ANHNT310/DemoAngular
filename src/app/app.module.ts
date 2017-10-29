@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -82,6 +82,7 @@ import { UserComponent } from './component/user/user.component';
     MatToolbarModule,
     MatTooltipModule,
     MatStepperModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
